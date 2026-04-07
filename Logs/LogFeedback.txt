@@ -1,0 +1,9 @@
+07/04/2026 00:47:33.209 - FEEDBACK: Neutro - INPUT: int x = "texto";
+Console.writeline("Olá")
+string nome = 42; - RESPOSTA_IA: True
+07/04/2026 00:47:51.004 - FEEDBACK: Neutro - INPUT: int x = 10;
+string nome = "João";
+Console.WriteLine(nome); - RESPOSTA_IA: False
+07/04/2026 00:47:53.037 - FEEDBACK: Positivo - INPUT: int x = 10;
+string nome = "João";
+Console.WriteLine(nome); - RESPOSTA_IA: Correto

@@ -1,0 +1,6 @@
+07/04/2026  00:47:33.207 - int x = "texto";
+Console.writeline("Olá")
+string nome = 42; - True
+07/04/2026  00:47:51.003 - int x = 10;
+string nome = "João";
+Console.WriteLine(nome); - False

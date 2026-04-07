@@ -1,0 +1,110 @@
+@page
+@model Detector.Pages.LogsModel
+@{
+    ViewData["Title"] = "Logs do Sistema";
+}
+
+<div class="d-flex align-items-center gap-2 mb-4">
+    <i class="fa-solid fa-file-lines fa-2x text-secondary"></i>
+    <div>
+        <h1 class="fw-bold mb-0">Logs do Sistema</h1>
+        <p class="text-muted mb-0 small">Histórico de requisições, respostas e feedbacks</p>
+    </div>
+</div>
+
+<ul class="nav nav-tabs mb-3" id="logTabs" role="tablist">
+    <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="req-tab" data-bs-toggle="tab" data-bs-target="#req"
+                type="button" role="tab">
+            <i class="fa-solid fa-arrow-right-to-bracket me-1"></i>Requisições
+        </button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="resp-tab" data-bs-toggle="tab" data-bs-target="#resp"
+                type="button" role="tab">
+            <i class="fa-solid fa-arrows-left-right me-1"></i>Requisições + Respostas
+        </button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="feed-tab" data-bs-toggle="tab" data-bs-target="#feed"
+                type="button" role="tab">
+            <i class="fa-solid fa-star me-1"></i>Feedbacks
+        </button>
+    </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade show active" id="req" role="tabpanel">
+        <div class="card border-0 shadow-sm">
+            <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
+                <span><i class="fa-solid fa-file me-1"></i>LogRequisicao.txt</span>
+                <span class="badge bg-secondary">@Model.LogRequisicao.Count linhas</span>
+            </div>
+            <div class="card-body p-0">
+                @if (Model.LogRequisicao.Count == 0)
+                {
+                    <p class="text-muted text-center py-4">Nenhum log encontrado ainda.</p>
+                }
+                else
+                {
+                    <div class="log-area">
+                        @foreach (var linha in Model.LogRequisicao)
+                        {
+                            <div class="log-linha">@linha</div>
+                        }
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+
+    <div class="tab-pane fade" id="resp" role="tabpanel">
+        <div class="card border-0 shadow-sm">
+            <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
+                <span><i class="fa-solid fa-file me-1"></i>LogRequisicaoResposta.txt</span>
+                <span class="badge bg-secondary">@Model.LogRequisicaoResposta.Count linhas</span>
+            </div>
+            <div class="card-body p-0">
+                @if (Model.LogRequisicaoResposta.Count == 0)
+                {
+                    <p class="text-muted text-center py-4">Nenhum log encontrado ainda.</p>
+                }
+                else
+                {
+                    <div class="log-area">
+                        @foreach (var linha in Model.LogRequisicaoResposta)
+                        {
+                            <div class="log-linha">@linha</div>
+                        }
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+
+    <div class="tab-pane fade" id="feed" role="tabpanel">
+        <div class="card border-0 shadow-sm">
+            <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
+                <span><i class="fa-solid fa-file me-1"></i>LogFeedback.txt</span>
+                <span class="badge bg-secondary">@Model.LogFeedback.Count linhas</span>
+            </div>
+            <div class="card-body p-0">
+                @if (Model.LogFeedback.Count == 0)
+                {
+                    <p class="text-muted text-center py-4">Nenhum feedback registrado ainda.</p>
+                }
+                else
+                {
+                    <div class="log-area">
+                        @foreach (var linha in Model.LogFeedback)
+                        {
+                            var isPos = linha.Contains("Positivo");
+                            var isNeg = linha.Contains("Negativo");
+                            <div class="log-linha @(isPos ? "log-positivo" : isNeg ? "log-negativo" : "")">@linha</div>
+                        }
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
