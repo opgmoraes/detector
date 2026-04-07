@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GJIZZrGjTus=",
+  "dgSpecHash": "2Nrd1hoAp8o=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Pedro Gabriel\\source\\repos\\Detector\\Detector.csproj",
+  "projectFilePath": "C:\\Users\\Pedro Gabriel\\OneDrive\\Documentos\\GitHub\\detector\\Detector.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Pedro Gabriel\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.0\\microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
     "C:\\Users\\Pedro Gabriel\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.1\\microsoft.extensions.dependencyinjection.abstractions.8.0.1.nupkg.sha512",

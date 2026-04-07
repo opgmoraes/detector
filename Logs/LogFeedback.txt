@@ -7,3 +7,477 @@ Console.WriteLine(nome); - RESPOSTA_IA: False
 07/04/2026 00:47:53.037 - FEEDBACK: Positivo - INPUT: int x = 10;
 string nome = "João";
 Console.WriteLine(nome); - RESPOSTA_IA: Correto
+07/04/2026 09:24:55.486 - FEEDBACK: Neutro - INPUT: int idade = 25;
+string nome = "Maria";
+bool ativo = true;
+Console.WriteLine(nome); - RESPOSTA_IA: False
+07/04/2026 09:25:29.942 - FEEDBACK: Neutro - INPUT: int idade = "vinte e cinco"
+string nome = 42;
+Bool ativo = true;
+console.WriteLine(nome) - RESPOSTA_IA: False
+07/04/2026 09:25:33.032 - FEEDBACK: Neutro - INPUT: int idade = "vinte e cinco"
+string nome = 42;
+Bool ativo = true;
+console.WriteLine(nome) - RESPOSTA_IA: False
+07/04/2026 09:25:48.972 - FEEDBACK: Neutro - INPUT: int idade = "vinte e cinco"
+string nome = 42;
+Bool ativo = true;
+console.WriteLine(nome) - RESPOSTA_IA: False
+07/04/2026 09:25:50.693 - FEEDBACK: Neutro - INPUT: int idade = "vinte e cinco"
+string nome = 42;
+Bool ativo = true;
+console.WriteLine(nome) - RESPOSTA_IA: False
+07/04/2026 09:26:28.200 - FEEDBACK: Neutro - INPUT: int idade = 25;
+string nome = 42;
+bool ativo = true;
+console.WriteLine(nome) - RESPOSTA_IA: False
+07/04/2026 09:27:05.723 - FEEDBACK: Neutro - INPUT: Int idade = "vinte e cinco"
+string nome = 42
+Bool Ativo = true
+console.writeLine(nome)
+void metodo( {
+for i = 0; i < 10; i++ {
+string s;
+Console.WriteLine(s) - RESPOSTA_IA: False
+07/04/2026 09:35:43.263 - FEEDBACK: Neutro - INPUT: int idade = "vinte e cinco"
+string nome = 42;
+Bool ativo = true;
+console.WriteLine(nome) - RESPOSTA_IA: False
+07/04/2026 09:35:45.956 - FEEDBACK: Neutro - INPUT: int idade = "vinte e cinco"
+string nome = 42;
+Bool ativo = true;
+console.WriteLine(nome) - RESPOSTA_IA: False
+07/04/2026 09:35:46.959 - FEEDBACK: Neutro - INPUT: int idade = "vinte e cinco"
+string nome = 42;
+Bool ativo = true;
+console.WriteLine(nome) - RESPOSTA_IA: False
+07/04/2026 09:35:47.357 - FEEDBACK: Neutro - INPUT: int idade = "vinte e cinco"
+string nome = 42;
+Bool ativo = true;
+console.WriteLine(nome) - RESPOSTA_IA: False
+07/04/2026 10:00:13.091 - FEEDBACK: Neutro - INPUT: int idade = "vinte e cinco"
+string nome = 42;
+Bool ativo = true;
+console.WriteLine(nome)int idade = "vinte e cinco"
+string nome = 42;
+Bool ativo = true;
+console.WriteLine(nome) - RESPOSTA_IA: False
+07/04/2026 10:00:14.676 - FEEDBACK: Neutro - INPUT: int idade = "vinte e cinco"
+string nome = 42;
+Bool ativo = true;
+console.WriteLine(nome)int idade = "vinte e cinco"
+string nome = 42;
+Bool ativo = true;
+console.WriteLine(nome) - RESPOSTA_IA: False
+07/04/2026 10:00:15.601 - FEEDBACK: Neutro - INPUT: int idade = "vinte e cinco"
+string nome = 42;
+Bool ativo = true;
+console.WriteLine(nome)int idade = "vinte e cinco"
+string nome = 42;
+Bool ativo = true;
+console.WriteLine(nome) - RESPOSTA_IA: False
+07/04/2026 10:00:15.943 - FEEDBACK: Neutro - INPUT: int idade = "vinte e cinco"
+string nome = 42;
+Bool ativo = true;
+console.WriteLine(nome)int idade = "vinte e cinco"
+string nome = 42;
+Bool ativo = true;
+console.WriteLine(nome) - RESPOSTA_IA: False
+07/04/2026 10:00:16.700 - FEEDBACK: Neutro - INPUT: int idade = "vinte e cinco"
+string nome = 42;
+Bool ativo = true;
+console.WriteLine(nome)int idade = "vinte e cinco"
+string nome = 42;
+Bool ativo = true;
+console.WriteLine(nome) - RESPOSTA_IA: False
+07/04/2026 10:00:17.883 - FEEDBACK: Neutro - INPUT: int idade = "vinte e cinco"
+string nome = 42;
+Bool ativo = true;
+console.WriteLine(nome)int idade = "vinte e cinco"
+string nome = 42;
+Bool ativo = true;
+console.WriteLine(nome) - RESPOSTA_IA: False
+07/04/2026 10:00:18.260 - FEEDBACK: Neutro - INPUT: int idade = "vinte e cinco"
+string nome = 42;
+Bool ativo = true;
+console.WriteLine(nome)int idade = "vinte e cinco"
+string nome = 42;
+Bool ativo = true;
+console.WriteLine(nome) - RESPOSTA_IA: False
+07/04/2026 10:00:28.743 - FEEDBACK: Neutro - INPUT: int idade = 25;
+string nome = 42;
+bool ativo = true;
+console.WriteLine(nome) - RESPOSTA_IA: False
+07/04/2026 10:00:29.932 - FEEDBACK: Neutro - INPUT: int idade = 25;
+string nome = 42;
+bool ativo = true;
+console.WriteLine(nome) - RESPOSTA_IA: False
+07/04/2026 10:00:38.360 - FEEDBACK: Neutro - INPUT: int x = "texto";
+Console.writeline("Olá")
+string nome = 42; - RESPOSTA_IA: True
+07/04/2026 10:00:44.537 - FEEDBACK: Neutro - INPUT: for (int i = 0; i < 10; i++ {
+    Console.writeline(i)
+} - RESPOSTA_IA: True
+07/04/2026 10:00:50.192 - FEEDBACK: Neutro - INPUT: for (int i = 0; i < 10; i++) {
+    Console.WriteLine(i);
+} - RESPOSTA_IA: False
+07/04/2026 10:02:23.554 - FEEDBACK: Neutro - INPUT: using System;
+
+class Program
+{
+    static void Main()
+    {
+        double preco = "20.5"
+        Console.writeline(Olá mundo)
+        bool ativo = "true";
+    }
+} - RESPOSTA_IA: True
+07/04/2026 10:02:45.998 - FEEDBACK: Neutro - INPUT: using System;
+
+class Program
+{
+    static void Main()
+    {
+        double preco = 20.5;
+        Console.WriteLine("Olá mundo");
+        bool ativo = true;
+    }
+} - RESPOSTA_IA: False
+07/04/2026 10:02:47.655 - FEEDBACK: Neutro - INPUT: using System;
+
+class Program
+{
+    static void Main()
+    {
+        double preco = 20.5;
+        Console.WriteLine("Olá mundo");
+        bool ativo = true;
+    }
+} - RESPOSTA_IA: False
+07/04/2026 10:03:55.368 - FEEDBACK: Neutro - INPUT: using System
+
+class Programa
+{
+    static main()
+    {
+        int numero = "dez";
+        string nome = 50
+        Console.writeline(Olá mundo)
+        bool ativo = "verdade"
+        
+        if numero > 5
+        {
+            Console.WriteLine("Maior")
+        }
+    }
+} - RESPOSTA_IA: False
+07/04/2026 10:03:56.942 - FEEDBACK: Neutro - INPUT: using System
+
+class Programa
+{
+    static main()
+    {
+        int numero = "dez";
+        string nome = 50
+        Console.writeline(Olá mundo)
+        bool ativo = "verdade"
+        
+        if numero > 5
+        {
+            Console.WriteLine("Maior")
+        }
+    }
+} - RESPOSTA_IA: False
+07/04/2026 10:03:57.810 - FEEDBACK: Neutro - INPUT: using System
+
+class Programa
+{
+    static main()
+    {
+        int numero = "dez";
+        string nome = 50
+        Console.writeline(Olá mundo)
+        bool ativo = "verdade"
+        
+        if numero > 5
+        {
+            Console.WriteLine("Maior")
+        }
+    }
+} - RESPOSTA_IA: False
+07/04/2026 10:03:58.605 - FEEDBACK: Neutro - INPUT: using System
+
+class Programa
+{
+    static main()
+    {
+        int numero = "dez";
+        string nome = 50
+        Console.writeline(Olá mundo)
+        bool ativo = "verdade"
+        
+        if numero > 5
+        {
+            Console.WriteLine("Maior")
+        }
+    }
+} - RESPOSTA_IA: False
+07/04/2026 10:03:58.924 - FEEDBACK: Neutro - INPUT: using System
+
+class Programa
+{
+    static main()
+    {
+        int numero = "dez";
+        string nome = 50
+        Console.writeline(Olá mundo)
+        bool ativo = "verdade"
+        
+        if numero > 5
+        {
+            Console.WriteLine("Maior")
+        }
+    }
+} - RESPOSTA_IA: False
+07/04/2026 10:03:59.246 - FEEDBACK: Neutro - INPUT: using System
+
+class Programa
+{
+    static main()
+    {
+        int numero = "dez";
+        string nome = 50
+        Console.writeline(Olá mundo)
+        bool ativo = "verdade"
+        
+        if numero > 5
+        {
+            Console.WriteLine("Maior")
+        }
+    }
+} - RESPOSTA_IA: False
+07/04/2026 10:03:59.616 - FEEDBACK: Neutro - INPUT: using System
+
+class Programa
+{
+    static main()
+    {
+        int numero = "dez";
+        string nome = 50
+        Console.writeline(Olá mundo)
+        bool ativo = "verdade"
+        
+        if numero > 5
+        {
+            Console.WriteLine("Maior")
+        }
+    }
+} - RESPOSTA_IA: False
+07/04/2026 10:03:59.959 - FEEDBACK: Neutro - INPUT: using System
+
+class Programa
+{
+    static main()
+    {
+        int numero = "dez";
+        string nome = 50
+        Console.writeline(Olá mundo)
+        bool ativo = "verdade"
+        
+        if numero > 5
+        {
+            Console.WriteLine("Maior")
+        }
+    }
+} - RESPOSTA_IA: False
+07/04/2026 10:04:00.294 - FEEDBACK: Neutro - INPUT: using System
+
+class Programa
+{
+    static main()
+    {
+        int numero = "dez";
+        string nome = 50
+        Console.writeline(Olá mundo)
+        bool ativo = "verdade"
+        
+        if numero > 5
+        {
+            Console.WriteLine("Maior")
+        }
+    }
+} - RESPOSTA_IA: False
+07/04/2026 10:04:00.629 - FEEDBACK: Neutro - INPUT: using System
+
+class Programa
+{
+    static main()
+    {
+        int numero = "dez";
+        string nome = 50
+        Console.writeline(Olá mundo)
+        bool ativo = "verdade"
+        
+        if numero > 5
+        {
+            Console.WriteLine("Maior")
+        }
+    }
+} - RESPOSTA_IA: False
+07/04/2026 10:04:00.984 - FEEDBACK: Neutro - INPUT: using System
+
+class Programa
+{
+    static main()
+    {
+        int numero = "dez";
+        string nome = 50
+        Console.writeline(Olá mundo)
+        bool ativo = "verdade"
+        
+        if numero > 5
+        {
+            Console.WriteLine("Maior")
+        }
+    }
+} - RESPOSTA_IA: False
+07/04/2026 10:06:52.641 - FEEDBACK: Neutro - INPUT: int x = "10";
+Console.WriteLine(Olá); - RESPOSTA_IA: True
+07/04/2026 10:06:54.100 - FEEDBACK: Neutro - INPUT: int x = "10";
+Console.WriteLine(Olá); - RESPOSTA_IA: True
+07/04/2026 10:07:08.768 - FEEDBACK: Neutro - INPUT: int x = 10;
+Console.WriteLine("Olá"); - RESPOSTA_IA: True
+07/04/2026 10:07:23.204 - FEEDBACK: Neutro - INPUT: int x = 10;
+Console.WriteLine("Olá"); - RESPOSTA_IA: True
+07/04/2026 10:07:24.196 - FEEDBACK: Neutro - INPUT: int x = 10;
+Console.WriteLine("Olá"); - RESPOSTA_IA: True
+07/04/2026 10:09:36.048 - FEEDBACK: Neutro - INPUT: using System;
+
+class Program
+{
+    static void Main()
+    {
+        int x = "10";
+        Console.WriteLine(Olá);
+    }
+} - RESPOSTA_IA: True
+07/04/2026 10:09:47.255 - FEEDBACK: Neutro - INPUT: using System;
+
+class Program
+{
+    static void Main()
+    {
+        int x = 10;
+        Console.WriteLine("Olá");
+    }
+} - RESPOSTA_IA: True
+07/04/2026 10:09:48.192 - FEEDBACK: Neutro - INPUT: using System;
+
+class Program
+{
+    static void Main()
+    {
+        int x = 10;
+        Console.WriteLine("Olá");
+    }
+} - RESPOSTA_IA: True
+07/04/2026 10:09:48.543 - FEEDBACK: Neutro - INPUT: using System;
+
+class Program
+{
+    static void Main()
+    {
+        int x = 10;
+        Console.WriteLine("Olá");
+    }
+} - RESPOSTA_IA: True
+07/04/2026 10:09:48.938 - FEEDBACK: Neutro - INPUT: using System;
+
+class Program
+{
+    static void Main()
+    {
+        int x = 10;
+        Console.WriteLine("Olá");
+    }
+} - RESPOSTA_IA: True
+07/04/2026 10:09:49.268 - FEEDBACK: Neutro - INPUT: using System;
+
+class Program
+{
+    static void Main()
+    {
+        int x = 10;
+        Console.WriteLine("Olá");
+    }
+} - RESPOSTA_IA: True
+07/04/2026 10:09:49.620 - FEEDBACK: Neutro - INPUT: using System;
+
+class Program
+{
+    static void Main()
+    {
+        int x = 10;
+        Console.WriteLine("Olá");
+    }
+} - RESPOSTA_IA: True
+07/04/2026 10:09:49.926 - FEEDBACK: Neutro - INPUT: using System;
+
+class Program
+{
+    static void Main()
+    {
+        int x = 10;
+        Console.WriteLine("Olá");
+    }
+} - RESPOSTA_IA: True
+07/04/2026 10:09:50.266 - FEEDBACK: Neutro - INPUT: using System;
+
+class Program
+{
+    static void Main()
+    {
+        int x = 10;
+        Console.WriteLine("Olá");
+    }
+} - RESPOSTA_IA: True
+07/04/2026 10:09:50.607 - FEEDBACK: Neutro - INPUT: using System;
+
+class Program
+{
+    static void Main()
+    {
+        int x = 10;
+        Console.WriteLine("Olá");
+    }
+} - RESPOSTA_IA: True
+07/04/2026 10:10:11.318 - FEEDBACK: Neutro - INPUT: using System;
+
+class Program
+{
+    static void Main()
+    {
+        string nome = "Pedro";
+        Console.WriteLine("Oi");
+    }
+} - RESPOSTA_IA: False
+07/04/2026 10:11:48.757 - FEEDBACK: Neutro - INPUT: using System;
+
+class Program
+{
+    static void Main()
+    {
+        string nome = "Pedro";
+        Console.WriteLine("Oi");
+    }
+} - RESPOSTA_IA: False
+07/04/2026 10:11:55.258 - FEEDBACK: Neutro - INPUT: using System;
+
+class Program
+{
+    static void Main()
+    {
+        int x = "10";
+        Console.WriteLine(Olá);
+    }
+} - RESPOSTA_IA: True

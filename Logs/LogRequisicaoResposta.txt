@@ -4,3 +4,477 @@ string nome = 42; - True
 07/04/2026  00:47:51.003 - int x = 10;
 string nome = "João";
 Console.WriteLine(nome); - False
+07/04/2026  09:24:55.482 - int idade = 25;
+string nome = "Maria";
+bool ativo = true;
+Console.WriteLine(nome); - False
+07/04/2026  09:25:29.936 - int idade = "vinte e cinco"
+string nome = 42;
+Bool ativo = true;
+console.WriteLine(nome) - False
+07/04/2026  09:25:33.030 - int idade = "vinte e cinco"
+string nome = 42;
+Bool ativo = true;
+console.WriteLine(nome) - False
+07/04/2026  09:25:48.965 - int idade = "vinte e cinco"
+string nome = 42;
+Bool ativo = true;
+console.WriteLine(nome) - False
+07/04/2026  09:25:50.691 - int idade = "vinte e cinco"
+string nome = 42;
+Bool ativo = true;
+console.WriteLine(nome) - False
+07/04/2026  09:26:28.194 - int idade = 25;
+string nome = 42;
+bool ativo = true;
+console.WriteLine(nome) - False
+07/04/2026  09:27:05.715 - Int idade = "vinte e cinco"
+string nome = 42
+Bool Ativo = true
+console.writeLine(nome)
+void metodo( {
+for i = 0; i < 10; i++ {
+string s;
+Console.WriteLine(s) - False
+07/04/2026  09:35:43.260 - int idade = "vinte e cinco"
+string nome = 42;
+Bool ativo = true;
+console.WriteLine(nome) - False
+07/04/2026  09:35:45.955 - int idade = "vinte e cinco"
+string nome = 42;
+Bool ativo = true;
+console.WriteLine(nome) - False
+07/04/2026  09:35:46.958 - int idade = "vinte e cinco"
+string nome = 42;
+Bool ativo = true;
+console.WriteLine(nome) - False
+07/04/2026  09:35:47.355 - int idade = "vinte e cinco"
+string nome = 42;
+Bool ativo = true;
+console.WriteLine(nome) - False
+07/04/2026  10:00:13.088 - int idade = "vinte e cinco"
+string nome = 42;
+Bool ativo = true;
+console.WriteLine(nome)int idade = "vinte e cinco"
+string nome = 42;
+Bool ativo = true;
+console.WriteLine(nome) - False
+07/04/2026  10:00:14.674 - int idade = "vinte e cinco"
+string nome = 42;
+Bool ativo = true;
+console.WriteLine(nome)int idade = "vinte e cinco"
+string nome = 42;
+Bool ativo = true;
+console.WriteLine(nome) - False
+07/04/2026  10:00:15.599 - int idade = "vinte e cinco"
+string nome = 42;
+Bool ativo = true;
+console.WriteLine(nome)int idade = "vinte e cinco"
+string nome = 42;
+Bool ativo = true;
+console.WriteLine(nome) - False
+07/04/2026  10:00:15.941 - int idade = "vinte e cinco"
+string nome = 42;
+Bool ativo = true;
+console.WriteLine(nome)int idade = "vinte e cinco"
+string nome = 42;
+Bool ativo = true;
+console.WriteLine(nome) - False
+07/04/2026  10:00:16.697 - int idade = "vinte e cinco"
+string nome = 42;
+Bool ativo = true;
+console.WriteLine(nome)int idade = "vinte e cinco"
+string nome = 42;
+Bool ativo = true;
+console.WriteLine(nome) - False
+07/04/2026  10:00:17.881 - int idade = "vinte e cinco"
+string nome = 42;
+Bool ativo = true;
+console.WriteLine(nome)int idade = "vinte e cinco"
+string nome = 42;
+Bool ativo = true;
+console.WriteLine(nome) - False
+07/04/2026  10:00:18.258 - int idade = "vinte e cinco"
+string nome = 42;
+Bool ativo = true;
+console.WriteLine(nome)int idade = "vinte e cinco"
+string nome = 42;
+Bool ativo = true;
+console.WriteLine(nome) - False
+07/04/2026  10:00:28.741 - int idade = 25;
+string nome = 42;
+bool ativo = true;
+console.WriteLine(nome) - False
+07/04/2026  10:00:29.930 - int idade = 25;
+string nome = 42;
+bool ativo = true;
+console.WriteLine(nome) - False
+07/04/2026  10:00:38.357 - int x = "texto";
+Console.writeline("Olá")
+string nome = 42; - True
+07/04/2026  10:00:44.536 - for (int i = 0; i < 10; i++ {
+    Console.writeline(i)
+} - True
+07/04/2026  10:00:50.188 - for (int i = 0; i < 10; i++) {
+    Console.WriteLine(i);
+} - False
+07/04/2026  10:02:23.551 - using System;
+
+class Program
+{
+    static void Main()
+    {
+        double preco = "20.5"
+        Console.writeline(Olá mundo)
+        bool ativo = "true";
+    }
+} - True
+07/04/2026  10:02:45.992 - using System;
+
+class Program
+{
+    static void Main()
+    {
+        double preco = 20.5;
+        Console.WriteLine("Olá mundo");
+        bool ativo = true;
+    }
+} - False
+07/04/2026  10:02:47.648 - using System;
+
+class Program
+{
+    static void Main()
+    {
+        double preco = 20.5;
+        Console.WriteLine("Olá mundo");
+        bool ativo = true;
+    }
+} - False
+07/04/2026  10:03:55.362 - using System
+
+class Programa
+{
+    static main()
+    {
+        int numero = "dez";
+        string nome = 50
+        Console.writeline(Olá mundo)
+        bool ativo = "verdade"
+        
+        if numero > 5
+        {
+            Console.WriteLine("Maior")
+        }
+    }
+} - False
+07/04/2026  10:03:56.939 - using System
+
+class Programa
+{
+    static main()
+    {
+        int numero = "dez";
+        string nome = 50
+        Console.writeline(Olá mundo)
+        bool ativo = "verdade"
+        
+        if numero > 5
+        {
+            Console.WriteLine("Maior")
+        }
+    }
+} - False
+07/04/2026  10:03:57.807 - using System
+
+class Programa
+{
+    static main()
+    {
+        int numero = "dez";
+        string nome = 50
+        Console.writeline(Olá mundo)
+        bool ativo = "verdade"
+        
+        if numero > 5
+        {
+            Console.WriteLine("Maior")
+        }
+    }
+} - False
+07/04/2026  10:03:58.603 - using System
+
+class Programa
+{
+    static main()
+    {
+        int numero = "dez";
+        string nome = 50
+        Console.writeline(Olá mundo)
+        bool ativo = "verdade"
+        
+        if numero > 5
+        {
+            Console.WriteLine("Maior")
+        }
+    }
+} - False
+07/04/2026  10:03:58.918 - using System
+
+class Programa
+{
+    static main()
+    {
+        int numero = "dez";
+        string nome = 50
+        Console.writeline(Olá mundo)
+        bool ativo = "verdade"
+        
+        if numero > 5
+        {
+            Console.WriteLine("Maior")
+        }
+    }
+} - False
+07/04/2026  10:03:59.243 - using System
+
+class Programa
+{
+    static main()
+    {
+        int numero = "dez";
+        string nome = 50
+        Console.writeline(Olá mundo)
+        bool ativo = "verdade"
+        
+        if numero > 5
+        {
+            Console.WriteLine("Maior")
+        }
+    }
+} - False
+07/04/2026  10:03:59.613 - using System
+
+class Programa
+{
+    static main()
+    {
+        int numero = "dez";
+        string nome = 50
+        Console.writeline(Olá mundo)
+        bool ativo = "verdade"
+        
+        if numero > 5
+        {
+            Console.WriteLine("Maior")
+        }
+    }
+} - False
+07/04/2026  10:03:59.954 - using System
+
+class Programa
+{
+    static main()
+    {
+        int numero = "dez";
+        string nome = 50
+        Console.writeline(Olá mundo)
+        bool ativo = "verdade"
+        
+        if numero > 5
+        {
+            Console.WriteLine("Maior")
+        }
+    }
+} - False
+07/04/2026  10:04:00.292 - using System
+
+class Programa
+{
+    static main()
+    {
+        int numero = "dez";
+        string nome = 50
+        Console.writeline(Olá mundo)
+        bool ativo = "verdade"
+        
+        if numero > 5
+        {
+            Console.WriteLine("Maior")
+        }
+    }
+} - False
+07/04/2026  10:04:00.626 - using System
+
+class Programa
+{
+    static main()
+    {
+        int numero = "dez";
+        string nome = 50
+        Console.writeline(Olá mundo)
+        bool ativo = "verdade"
+        
+        if numero > 5
+        {
+            Console.WriteLine("Maior")
+        }
+    }
+} - False
+07/04/2026  10:04:00.980 - using System
+
+class Programa
+{
+    static main()
+    {
+        int numero = "dez";
+        string nome = 50
+        Console.writeline(Olá mundo)
+        bool ativo = "verdade"
+        
+        if numero > 5
+        {
+            Console.WriteLine("Maior")
+        }
+    }
+} - False
+07/04/2026  10:06:52.637 - int x = "10";
+Console.WriteLine(Olá); - True
+07/04/2026  10:06:54.096 - int x = "10";
+Console.WriteLine(Olá); - True
+07/04/2026  10:07:08.766 - int x = 10;
+Console.WriteLine("Olá"); - True
+07/04/2026  10:07:23.200 - int x = 10;
+Console.WriteLine("Olá"); - True
+07/04/2026  10:07:24.192 - int x = 10;
+Console.WriteLine("Olá"); - True
+07/04/2026  10:09:36.042 - using System;
+
+class Program
+{
+    static void Main()
+    {
+        int x = "10";
+        Console.WriteLine(Olá);
+    }
+} - True
+07/04/2026  10:09:47.252 - using System;
+
+class Program
+{
+    static void Main()
+    {
+        int x = 10;
+        Console.WriteLine("Olá");
+    }
+} - True
+07/04/2026  10:09:48.190 - using System;
+
+class Program
+{
+    static void Main()
+    {
+        int x = 10;
+        Console.WriteLine("Olá");
+    }
+} - True
+07/04/2026  10:09:48.541 - using System;
+
+class Program
+{
+    static void Main()
+    {
+        int x = 10;
+        Console.WriteLine("Olá");
+    }
+} - True
+07/04/2026  10:09:48.933 - using System;
+
+class Program
+{
+    static void Main()
+    {
+        int x = 10;
+        Console.WriteLine("Olá");
+    }
+} - True
+07/04/2026  10:09:49.265 - using System;
+
+class Program
+{
+    static void Main()
+    {
+        int x = 10;
+        Console.WriteLine("Olá");
+    }
+} - True
+07/04/2026  10:09:49.617 - using System;
+
+class Program
+{
+    static void Main()
+    {
+        int x = 10;
+        Console.WriteLine("Olá");
+    }
+} - True
+07/04/2026  10:09:49.924 - using System;
+
+class Program
+{
+    static void Main()
+    {
+        int x = 10;
+        Console.WriteLine("Olá");
+    }
+} - True
+07/04/2026  10:09:50.262 - using System;
+
+class Program
+{
+    static void Main()
+    {
+        int x = 10;
+        Console.WriteLine("Olá");
+    }
+} - True
+07/04/2026  10:09:50.604 - using System;
+
+class Program
+{
+    static void Main()
+    {
+        int x = 10;
+        Console.WriteLine("Olá");
+    }
+} - True
+07/04/2026  10:10:11.310 - using System;
+
+class Program
+{
+    static void Main()
+    {
+        string nome = "Pedro";
+        Console.WriteLine("Oi");
+    }
+} - False
+07/04/2026  10:11:48.749 - using System;
+
+class Program
+{
+    static void Main()
+    {
+        string nome = "Pedro";
+        Console.WriteLine("Oi");
+    }
+} - False
+07/04/2026  10:11:55.257 - using System;
+
+class Program
+{
+    static void Main()
+    {
+        int x = "10";
+        Console.WriteLine(Olá);
+    }
+} - True
