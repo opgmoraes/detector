@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Detector")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+87162e2e1a1ea3b1dd7896213874078eb92ee0ae")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0063ee255949dd403f3f8a16d569332872f79781")]
 [assembly: System.Reflection.AssemblyProductAttribute("Detector")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Detector")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

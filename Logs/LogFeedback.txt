@@ -481,3 +481,43 @@ class Program
         Console.WriteLine(Olá);
     }
 } - RESPOSTA_IA: True
+07/04/2026 10:17:11.291 - FEEDBACK: Neutro - INPUT: using System;
+
+class Program
+{
+    static void Main()
+    {
+        int x = "10";
+        Console.WriteLine(Olá);
+    }
+} - RESPOSTA_IA: True
+07/04/2026 10:17:19.898 - FEEDBACK: Neutro - INPUT: using System;
+
+class Program
+{
+    static void Main()
+    {
+        string nome = "Pedro";
+        Console.WriteLine("Oi");
+    }
+} - RESPOSTA_IA: False
+07/04/2026 10:17:21.211 - FEEDBACK: Neutro - INPUT: using System;
+
+class Program
+{
+    static void Main()
+    {
+        string nome = "Pedro";
+        Console.WriteLine("Oi");
+    }
+} - RESPOSTA_IA: False
+07/04/2026 10:17:21.574 - FEEDBACK: Neutro - INPUT: using System;
+
+class Program
+{
+    static void Main()
+    {
+        string nome = "Pedro";
+        Console.WriteLine("Oi");
+    }
+} - RESPOSTA_IA: False

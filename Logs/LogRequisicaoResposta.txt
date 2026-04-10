@@ -478,3 +478,43 @@ class Program
         Console.WriteLine(Olá);
     }
 } - True
+07/04/2026  10:17:11.287 - using System;
+
+class Program
+{
+    static void Main()
+    {
+        int x = "10";
+        Console.WriteLine(Olá);
+    }
+} - True
+07/04/2026  10:17:19.896 - using System;
+
+class Program
+{
+    static void Main()
+    {
+        string nome = "Pedro";
+        Console.WriteLine("Oi");
+    }
+} - False
+07/04/2026  10:17:21.209 - using System;
+
+class Program
+{
+    static void Main()
+    {
+        string nome = "Pedro";
+        Console.WriteLine("Oi");
+    }
+} - False
+07/04/2026  10:17:21.570 - using System;
+
+class Program
+{
+    static void Main()
+    {
+        string nome = "Pedro";
+        Console.WriteLine("Oi");
+    }
+} - False
