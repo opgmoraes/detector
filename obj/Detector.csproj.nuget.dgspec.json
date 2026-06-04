@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Pedro Gabriel\\OneDrive\\Documentos\\GitHub\\detector\\Detector.csproj": {}
+    "C:\\Users\\Pedro Gabriel\\OneDrive\\Documentos\\GitHub\\detector-novo\\Detector.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Pedro Gabriel\\OneDrive\\Documentos\\GitHub\\detector\\Detector.csproj": {
+    "C:\\Users\\Pedro Gabriel\\OneDrive\\Documentos\\GitHub\\detector-novo\\Detector.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Pedro Gabriel\\OneDrive\\Documentos\\GitHub\\detector\\Detector.csproj",
+        "projectUniqueName": "C:\\Users\\Pedro Gabriel\\OneDrive\\Documentos\\GitHub\\detector-novo\\Detector.csproj",
         "projectName": "Detector",
-        "projectPath": "C:\\Users\\Pedro Gabriel\\OneDrive\\Documentos\\GitHub\\detector\\Detector.csproj",
+        "projectPath": "C:\\Users\\Pedro Gabriel\\OneDrive\\Documentos\\GitHub\\detector-novo\\Detector.csproj",
         "packagesPath": "C:\\Users\\Pedro Gabriel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Pedro Gabriel\\OneDrive\\Documentos\\GitHub\\detector\\obj\\",
+        "outputPath": "C:\\Users\\Pedro Gabriel\\OneDrive\\Documentos\\GitHub\\detector-novo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -45,13 +45,25 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
         "net6.0": {
           "framework": "net6.0",
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.36, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[6.0.36, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[6.0.36, )"
+            },
             "Microsoft.Extensions.ML": {
               "target": "Package",
               "version": "[4.0.2, )"
@@ -80,7 +92,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

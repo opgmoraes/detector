@@ -1,5 +1,6 @@
 using Microsoft.ML;
 using Detector.Models;
+using Detector.Repositories;
 
 namespace Detector.Services
 {
@@ -7,14 +8,32 @@ namespace Detector.Services
     {
         public static void Treinar(string pastaModelos)
         {
-            var ml = new MLContext(seed: 1);
-
+            var ml   = new MLContext(seed: 1);
             var data = ml.Data.LoadFromTextFile<CodigoData>(
                 Path.Combine(pastaModelos, "codigo_csharp.csv"),
                 hasHeader: true,
                 separatorChar: ',',
                 allowQuoting: true);
 
+            TreinarEPersistir(ml, data, pastaModelos);
+        }
+
+        public static void TreinarDoBanco(string pastaModelos, TreinamentoRepository repo)
+        {
+            var ml       = new MLContext(seed: 1);
+            var registros = repo.ObterTodos()
+                .Select(d => new CodigoData { Label = d.Label, Text = d.Text })
+                .ToList();
+
+            if (registros.Count == 0)
+                throw new InvalidOperationException("Nenhum dado de treinamento encontrado no banco.");
+
+            var data = ml.Data.LoadFromEnumerable(registros);
+            TreinarEPersistir(ml, data, pastaModelos);
+        }
+
+        private static void TreinarEPersistir(MLContext ml, IDataView data, string pastaModelos)
+        {
             var split = ml.Data.TrainTestSplit(data, testFraction: 0.2, seed: 1);
 
             var pipeline = ml.Transforms.Text
@@ -26,8 +45,7 @@ namespace Detector.Services
             var model = pipeline.Fit(split.TrainSet);
 
             Directory.CreateDirectory(pastaModelos);
-            var caminhoModelo = Path.Combine(pastaModelos, "model.zip");
-            ml.Model.Save(model, split.TrainSet.Schema, caminhoModelo);
+            ml.Model.Save(model, split.TrainSet.Schema, Path.Combine(pastaModelos, "model.zip"));
         }
     }
 }

@@ -8,7 +8,7 @@
     <i class="fa-solid fa-file-lines fa-2x text-secondary"></i>
     <div>
         <h1 class="fw-bold mb-0">Logs do Sistema</h1>
-        <p class="text-muted mb-0 small">Histórico de requisições, respostas e feedbacks</p>
+        <p class="text-muted mb-0 small">Histórico de requisições, respostas e feedbacks — armazenados no banco de dados</p>
     </div>
 </div>
 
@@ -37,8 +37,8 @@
     <div class="tab-pane fade show active" id="req" role="tabpanel">
         <div class="card border-0 shadow-sm">
             <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
-                <span><i class="fa-solid fa-file me-1"></i>LogRequisicao.txt</span>
-                <span class="badge bg-secondary">@Model.LogRequisicao.Count linhas</span>
+                <span><i class="fa-solid fa-database me-1"></i>Tabela: LogsRequisicao</span>
+                <span class="badge bg-secondary">@Model.LogRequisicao.Count registros</span>
             </div>
             <div class="card-body p-0">
                 @if (Model.LogRequisicao.Count == 0)
@@ -48,9 +48,9 @@
                 else
                 {
                     <div class="log-area">
-                        @foreach (var linha in Model.LogRequisicao)
+                        @foreach (var item in Model.LogRequisicao)
                         {
-                            <div class="log-linha">@linha</div>
+                            <div class="log-linha">@item.DataHora.ToString("dd/MM/yyyy HH:mm:ss") — @item.Input</div>
                         }
                     </div>
                 }
@@ -61,8 +61,8 @@
     <div class="tab-pane fade" id="resp" role="tabpanel">
         <div class="card border-0 shadow-sm">
             <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
-                <span><i class="fa-solid fa-file me-1"></i>LogRequisicaoResposta.txt</span>
-                <span class="badge bg-secondary">@Model.LogRequisicaoResposta.Count linhas</span>
+                <span><i class="fa-solid fa-database me-1"></i>Tabela: LogsRequisicaoResposta</span>
+                <span class="badge bg-secondary">@Model.LogRequisicaoResposta.Count registros</span>
             </div>
             <div class="card-body p-0">
                 @if (Model.LogRequisicaoResposta.Count == 0)
@@ -72,9 +72,9 @@
                 else
                 {
                     <div class="log-area">
-                        @foreach (var linha in Model.LogRequisicaoResposta)
+                        @foreach (var item in Model.LogRequisicaoResposta)
                         {
-                            <div class="log-linha">@linha</div>
+                            <div class="log-linha">@item.DataHora.ToString("dd/MM/yyyy HH:mm:ss") — @item.Input — @item.Resposta</div>
                         }
                     </div>
                 }
@@ -85,8 +85,8 @@
     <div class="tab-pane fade" id="feed" role="tabpanel">
         <div class="card border-0 shadow-sm">
             <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
-                <span><i class="fa-solid fa-file me-1"></i>LogFeedback.txt</span>
-                <span class="badge bg-secondary">@Model.LogFeedback.Count linhas</span>
+                <span><i class="fa-solid fa-database me-1"></i>Tabela: LogsFeedback</span>
+                <span class="badge bg-secondary">@Model.LogFeedback.Count registros</span>
             </div>
             <div class="card-body p-0">
                 @if (Model.LogFeedback.Count == 0)
@@ -96,11 +96,13 @@
                 else
                 {
                     <div class="log-area">
-                        @foreach (var linha in Model.LogFeedback)
+                        @foreach (var item in Model.LogFeedback)
                         {
-                            var isPos = linha.Contains("Positivo");
-                            var isNeg = linha.Contains("Negativo");
-                            <div class="log-linha @(isPos ? "log-positivo" : isNeg ? "log-negativo" : "")">@linha</div>
+                            var isPos = item.TipoFeedback == Detector.Enums.EnumTipoFeedback.Positivo;
+                            var isNeg = item.TipoFeedback == Detector.Enums.EnumTipoFeedback.Negativo;
+                            <div class="log-linha @(isPos ? "log-positivo" : isNeg ? "log-negativo" : "")">
+                                @item.DataHora.ToString("dd/MM/yyyy HH:mm:ss") — @item.TipoFeedback — @item.Input — @item.RespostaIA
+                            </div>
                         }
                     </div>
                 }

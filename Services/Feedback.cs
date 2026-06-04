@@ -1,20 +1,20 @@
 using Detector.Enums;
+using Detector.Repositories;
 
 namespace Detector.Services
 {
     public class Feedback
     {
+        private readonly LogRepository _repo;
+
+        public Feedback(LogRepository repo)
+        {
+            _repo = repo;
+        }
+
         public void GerarFeedback(string input, string respostaIA, EnumTipoFeedback feedBack)
         {
-            Directory.CreateDirectory("Logs");
-            string tipo = feedBack.ToString();
-            string log = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss.fff")
-                         + " - FEEDBACK: " + tipo
-                         + " - INPUT: " + input
-                         + " - RESPOSTA_IA: " + respostaIA;
-
-            string Caminho = @"Logs\LogFeedback.txt";
-            File.AppendAllText(Caminho, log + "\n");
+            _repo.GravarFeedback(input, respostaIA, feedBack);
         }
     }
 }

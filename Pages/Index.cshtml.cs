@@ -10,10 +10,17 @@ namespace Detector.Pages
     public class IndexModel : PageModel
     {
         private readonly PredictionEngine<CodigoData, CodigoPrediction> _predictionEngine;
+        private readonly Logs _logs;
+        private readonly Feedback _feedback;
 
-        public IndexModel(PredictionEngine<CodigoData, CodigoPrediction> predictionEngine)
+        public IndexModel(
+            PredictionEngine<CodigoData, CodigoPrediction> predictionEngine,
+            Logs logs,
+            Feedback feedback)
         {
             _predictionEngine = predictionEngine;
+            _logs = logs;
+            _feedback = feedback;
         }
 
         [BindProperty]
@@ -32,35 +39,26 @@ namespace Detector.Pages
             if (string.IsNullOrWhiteSpace(InputCode))
                 return Page();
 
-            // Log da requisição
-            var logs = new Logs();
-            logs.GerarLogRequisicao(InputCode);
+            _logs.GerarLogRequisicao(InputCode);
 
-            // Predição
             var inputData = new CodigoData { Text = InputCode };
             PredictionResult = _predictionEngine.Predict(inputData);
 
-            // Log da resposta
-            logs.GerarLogRequisicaoResposta(InputCode, PredictionResult.PredictedLabel.ToString());
-
-            // Feedback neutro automático (sem interação do usuário ainda)
-            var feedback = new Feedback();
-            feedback.GerarFeedback(InputCode, PredictionResult.PredictedLabel.ToString(), EnumTipoFeedback.Neutro);
+            _logs.GerarLogRequisicaoResposta(InputCode, PredictionResult.PredictedLabel.ToString());
 
             return Page();
         }
 
-        public IActionResult OnPostFeedback(string RespostaIA, int TipoFeedback)
+        public IActionResult OnPostFeedback(string inputCode, string respostaIA, int tipoFeedback)
         {
-            var tipoEnum = TipoFeedback switch
+            var tipoEnum = tipoFeedback switch
             {
                 1 => EnumTipoFeedback.Positivo,
                 2 => EnumTipoFeedback.Negativo,
                 _ => EnumTipoFeedback.Neutro
             };
 
-            var feedback = new Feedback();
-            feedback.GerarFeedback(InputCode, RespostaIA, tipoEnum);
+            _feedback.GerarFeedback(inputCode, respostaIA, tipoEnum);
 
             FeedbackEnviado = true;
             return Page();

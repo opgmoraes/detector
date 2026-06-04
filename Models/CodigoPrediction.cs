@@ -5,7 +5,7 @@ namespace Detector.Models
     public class CodigoPrediction
     {
         [ColumnName("PredictedLabel")]
-        public bool PredictedLabel { get; set; }   // true = erro detectado
+        public bool PredictedLabel { get; set; }
 
         public float Probability { get; set; }
 

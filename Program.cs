@@ -1,26 +1,51 @@
 using Microsoft.ML;
+using Microsoft.EntityFrameworkCore;
 using Detector.Models;
 using Detector.Services;
+using Detector.Data;
+using Detector.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddRazorPages();
 
-// Treina o modelo se ainda não existir
-var pastaModelos = Path.Combine(AppContext.BaseDirectory, "MLModels");
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")
+                     ?? "Data Source=detector.db"));
+
+builder.Services.AddScoped<LogRepository>();
+builder.Services.AddScoped<TreinamentoRepository>();
+builder.Services.AddScoped<Logs>();
+builder.Services.AddScoped<Feedback>();
+
+var pastaModelos  = Path.Combine(AppContext.BaseDirectory, "MLModels");
+var caminhoModelo = Path.Combine(pastaModelos, "model.zip");
+var caminhoCSV    = Path.Combine(pastaModelos, "codigo_csharp.csv");
+
 Directory.CreateDirectory(pastaModelos);
 
-if (!File.Exists(Path.Combine(pastaModelos, "model.zip")))
-    ModelBuilder.Treinar(pastaModelos);
+if (!File.Exists(caminhoModelo))
+{
+    if (!File.Exists(caminhoCSV))
+        throw new FileNotFoundException($"CSV não encontrado em: {caminhoCSV}");
+
+    Detector.Services.ModelBuilder.Treinar(pastaModelos);
+}
 
 var mlContext = new MLContext();
-var modelPath = Path.Combine(pastaModelos, "model.zip");
-var model = mlContext.Model.Load(modelPath, out _);
-var engine = mlContext.Model.CreatePredictionEngine<CodigoData, CodigoPrediction>(model);
+var model     = mlContext.Model.Load(caminhoModelo, out _);
+var engine    = mlContext.Model.CreatePredictionEngine<CodigoData, CodigoPrediction>(model);
 
 builder.Services.AddSingleton(engine);
 
 var app = builder.Build();
+
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+    db.Database.EnsureCreated();
+    DatabaseSeeder.Seed(db);
+}
 
 if (!app.Environment.IsDevelopment())
 {
